@@ -7,8 +7,12 @@ The project uses MediaPipe for hand landmark extraction and a machine learning m
 ![image](https://github.com/user-attachments/assets/1a05eb3f-fff9-452a-8931-8b2d8e396cd2)
 
 The orange block is where the webcam video is displayed. 
+
 Change the value of videocapture to 0 for default laptop webcam.
+
 Otherwise 1 if using an external webcam.
+
+
 
 Project Overview
 
@@ -19,6 +23,7 @@ Static hand gestures for the alphabet (A-Z).
 Dynamic hand gestures for common phrases such as "hello" and "goodbye."
 
 It processes live webcam input to identify hand movements and outputs the recognized gesture as text.
+
 
 
 Technologies Used
@@ -38,9 +43,15 @@ NumPy: For handling numerical data processing.
 Pickle: For saving and loading the trained model.
 
 
+
 Model Architecture
-The model used for gesture recognition is a Random Forest Classifier trained on hand landmark data. The steps include:
+
+The model used for gesture recognition is a Random Forest Classifier trained on hand landmark data. 
+
+The steps include:
 
 Data Preprocessing: Extract distances and angles between hand landmarks for each frame.
+
 Training: A Random Forest model is trained using the extracted features.
+
 Prediction: The model predicts the gesture (alphabet or dynamic sequence) in real-time.
