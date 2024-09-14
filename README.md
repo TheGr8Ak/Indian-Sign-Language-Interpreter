@@ -1,5 +1,5 @@
 # ISL-Interpreter
-Indian Sign Language interpreter
+**Indian Sign Language interpreter**
 
 This project aims to develop a real-time Indian Sign Language (ISL) interpreter that recognizes both static alphabets (A-Z) and dynamic hand gestures for common phrases like "hello," "goodbye," etc. 
 The project uses MediaPipe for hand landmark extraction and a machine learning model (Random Forest) to classify gestures.
@@ -14,7 +14,7 @@ Otherwise 1 if using an external webcam.
 
 
 
-Project Overview
+**Project Overview**
 
 The Indian Sign Language Interpreter is designed to recognize:
 
@@ -26,7 +26,7 @@ It processes live webcam input to identify hand movements and outputs the recogn
 
 
 
-Technologies Used
+**Technologies Used**
 
 Python 3.8
 
@@ -44,7 +44,7 @@ Pickle: For saving and loading the trained model.
 
 
 
-Model Architecture
+**Model Architecture**
 
 The model used for gesture recognition is a Random Forest Classifier trained on hand landmark data. 
 
