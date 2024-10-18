@@ -5,6 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.feature_selection import RFE
 import pickle
+from tqdm import tqdm  # Import tqdm for progress bar
 
 DATA_DIR = './data'
 number_of_classes = 32  # A-Z
@@ -40,9 +41,13 @@ rf = RandomForestClassifier(
 print("Training the Random Forest model...")
 rf.fit(X_train, y_train)  # Train all trees at once
 
-# Feature selection with Recursive Feature Elimination (RFE)
+# Feature selection with Recursive Feature Elimination (RFE) and progress bar
 rfe = RFE(rf, n_features_to_select=20)
-rfe.fit(X_train, y_train)
+
+# Add tqdm for progress bar during RFE fitting
+print("Performing Recursive Feature Elimination (RFE)...")
+for _ in tqdm(range(1)):  # RFE doesn't have multiple iterations, just show one iteration of progress
+    rfe.fit(X_train, y_train)
 
 # Save the trained model
 with open('model.p', 'wb') as f:
