@@ -7,7 +7,7 @@ DATA_DIR = './data'
 if not os.path.exists(DATA_DIR):
     os.makedirs(DATA_DIR)
 
-number_of_classes = 4  # A-Z (26 classes)
+number_of_classes = 32  # A-Z (26 classes)
 dataset_size = 100  # Increase dataset to 200 images per class
 
 cap = cv2.VideoCapture(1)  # Change to 0 to use the default webcam (built-in webcam)
