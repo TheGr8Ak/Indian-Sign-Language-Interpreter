@@ -1,12 +1,16 @@
 # ISL-Interpreter
 **Indian Sign Language interpreter**
 
-This project aims to develop a real-time Indian Sign Language (ISL) interpreter that recognizes both static alphabets (A-Z) and dynamic hand gestures for common phrases like "hello," "goodbye," etc. 
+This project aims to develop a real-time Indian Sign Language (ISL) interpreter that recognizes both static alphabets (A-Z) and static hand gestures for common phrases like "hello," "goodbye," etc. 
 The project uses MediaPipe for hand landmark extraction and a machine learning model (Random Forest) to classify gestures.
 
-![image](https://github.com/user-attachments/assets/1a05eb3f-fff9-452a-8931-8b2d8e396cd2)
+![Sign Language Recognition - Google Chrome 02-10-2024 23_47_08](https://github.com/user-attachments/assets/74db25b2-e568-4610-ad67-48221e1d9116)
 
-The orange block is where the webcam video is displayed. 
+This is the frontend screen
+
+![vlcsnap-2024-10-02-23h42m25s368](https://github.com/user-attachments/assets/cd29828b-7769-43de-a8a3-15c6f5a8f8ef)
+
+Visual preview of the prediction screen (C is being shown in frame) 
 
 Change the value of videocapture to 0 for default laptop webcam.
 
