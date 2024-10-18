@@ -1,5 +1,3 @@
-# inference_classifier.py
-
 import pickle
 import cv2
 import mediapipe as mp
@@ -13,6 +11,7 @@ mp_hands = mp.solutions.hands
 hands = mp_hands.Hands(static_image_mode=False, min_detection_confidence=0.3)
 
 # Updated labels_dict for alphabets (0-25) and dynamic sequences (26, 27, etc.)
+#labels_dict = {0:'B',1:'S'}
 labels_dict = {i: chr(65 + i) for i in range(26)}  # A-Z for classes 0-25
 labels_dict.update({26: 'hello', 27: 'goodbye', 28: 'thank you', 29: 'welcome', 30: 'please', 31: 'sorry'})  # Adding dynamic sequences
 
