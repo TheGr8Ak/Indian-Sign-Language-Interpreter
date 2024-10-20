@@ -97,8 +97,8 @@ The Indian Sign Language Interpreter is designed to:
 ---
 
 ## **Project Structure**
-
-- data/                     # Directory to store the image dataset
+```bash
+- data/                      # Directory to store the image dataset
 - theme.streamlit/           # Streamlit theme configuration
 - config.toml                # Streamlit UI settings
 - collect_imgs.py            # Code for capturing images
@@ -107,15 +107,19 @@ The Indian Sign Language Interpreter is designed to:
 - prediction.py              # Code for making predictions in real-time
 - frontend.py                # Streamlit-based web interface
 - model.p                    # Pickle file storing the trained model
-
+```
 ---
 
 ## **Future Scope**
 
 1. Extend Dataset: Include more dynamic phrases and hand gestures to improve recognition accuracy.
+   
 2. Incorporate Dynamic Sign Language: Implement models like LSTM or GRU to handle dynamic gestures over time.
+   
 3. Deploy on Edge Devices: Optimize the model for deployment on edge computing devices for faster real-time recognition.
+   
 4. Add Speech Recognition: Integrate speech-to-text systems like Whisper API to map spoken words to corresponding signs.
+   
 5. Expand to Regional Variants: Adapt the model to recognize regional variants of Indian Sign Language (ISL).
 
 ---
