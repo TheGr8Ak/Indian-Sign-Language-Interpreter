@@ -1,8 +1,9 @@
 streamlit
-opencv-python-headless
+opencv-python-contrib-headless
 numpy
 pillow
 mediapipe
 tensorflow-cpu
 scikit-learn
+
 tqdm
