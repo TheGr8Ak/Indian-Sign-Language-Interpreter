@@ -1,0 +1,14 @@
+[theme]
+base="dark"
+primaryColor="#ff371d"
+backgroundColor="#000000"
+secondaryBackgroundColor="#272727"
+
+[global]
+gatherUsageStats = false
+
+[server]
+port = 8501
+address = "0.0.0.0"
+enableCORS = false
+enableXsrfProtection = false
